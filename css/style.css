@@ -35,23 +35,27 @@ body {
 }
 
 header {
-  height: calc(100vh - 90px);
-  overflow: hidden;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    position: relative;
 }
+
 header img {
-  width: 100%;
+    width: 100%;
 }
 
 header .header-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 60%;
+
 }
 
 .header-wrapper h1 {
     font-size: 52px;
     font-weight: bold;
+    color: #7d5b74;
     text-shadow: 1px 1px 2px #FFF;
 }
 
@@ -67,14 +71,14 @@ header .header-wrapper {
     color: #fff;
     margin-top: 30px;
     width: 200px;
-    -webkit-box-shadow: 0px 1px 2px 1px rgba(125,91,116,1);
-    -moz-box-shadow: 0px 1px 2px 1px rgba(125,91,116,1);
-    box-shadow: 0px 1px 2px 1px rgba(125,91,116,1);
-outline: none;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(125, 91, 116, 1);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(125, 91, 116, 1);
+    box-shadow: 0px 1px 2px 1px rgba(125, 91, 116, 1);
+    outline: none;
 }
 
 .offert {
-   background: #ff6b6b;
+    background: #ff6b6b;
     padding-top: 50px;
     color: #fff;
     min-height: 718px;
@@ -85,6 +89,7 @@ outline: none;
     font-size: 42px;
     color: #7d5b74;
 }
+
 .offert .content span {
     color: #fff;
 }
@@ -106,21 +111,39 @@ outline: none;
 .cards {
     margin-top: 20px;
 }
+
 .cards-item {
     background: #000;
     overflow: hidden;
-    
+
 }
+
 .col-content:nth-child(1) {
     padding-right: 7.5px;
 }
+
 .col-content:nth-child(2) {
     padding-left: 7.5px;
 }
+
 .cards-item img {
-   
+
     height: 633px;
 }
+
 .col-content {
     margin-bottom: 15px;
+    position: relative;
+}
+
+.col-content .cards-title {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 46px;
+    text-shadow: 2px 2px 2px #7d5b74;
 }
