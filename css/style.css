@@ -6,7 +6,7 @@ body {
 .nav {
     height: 100px;
     width: 100%;
-    background: #000;
+    background: #fff;
     padding: 0 20px 0 20px;
     display: flex;
     justify-content: space-between;
@@ -35,12 +35,11 @@ body {
 }
 
 header {
-    height: calc(100vh - 90px);
-    width: 100%;
-    background: url('../img/header.png');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+header img {
+  width: 100%;
 }
 
 header .header-wrapper {
@@ -75,8 +74,18 @@ outline: none;
 }
 
 .offert {
-    background: #000100;
+   background: #ff6b6b;
     padding-top: 50px;
+    color: #fff;
+    min-height: 718px;
+    margin-top: 20px;
+}
+
+.offert .content {
+    font-size: 42px;
+    color: #7d5b74;
+}
+.offert .content span {
     color: #fff;
 }
 
@@ -91,4 +100,27 @@ outline: none;
 
 .offert .col {
     padding: 0;
+}
+
+/*section cards */
+.cards {
+    margin-top: 20px;
+}
+.cards-item {
+    background: #000;
+    overflow: hidden;
+    
+}
+.col-content:nth-child(1) {
+    padding-right: 7.5px;
+}
+.col-content:nth-child(2) {
+    padding-left: 7.5px;
+}
+.cards-item img {
+   
+    height: 633px;
+}
+.col-content {
+    margin-bottom: 15px;
 }
