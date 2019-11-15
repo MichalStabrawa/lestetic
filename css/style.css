@@ -10,7 +10,7 @@ body {
     padding: 0 20px 0 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .nav .navbar {
@@ -23,6 +23,13 @@ body {
     color: #7d5b74;
     margin-right: 15px;
     font-size: 20px;
+}
+.nav .navbar .navbar-item::after {
+    content: "/";
+    margin-left: 10px;
+}
+.nav .navbar .navbar-item:nth-last-of-type(1)::after {
+    content: ""
 }
 
 .logo>img {
