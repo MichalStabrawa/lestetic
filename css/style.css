@@ -4,6 +4,8 @@ body {
 }
 
 .nav {
+    position: fixed;
+    top: 0;
     height: 100px;
     width: 100%;
     background: #fff;
@@ -11,6 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    z-index: 100;
 }
 
 .nav .navbar {
@@ -44,7 +47,25 @@ body {
     margin-right: 5px;
 }
 
+.hamburger {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    position: relative;
+    height: 5px;
+    background: #000;
+    margin-bottom: 5px;
+}
+
+
+/*header !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 header {
+    margin-top: 100px;
     overflow: hidden;
     position: relative;
 }
@@ -196,6 +217,26 @@ header .header-wrapper {
 
 .your-class {
     position: relative;
+}
+
+@media(max-width: 768px) {
+    .nav {
+        align-items: center;
+    }
+
+    .nav .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .col-content:nth-child(2){
+        padding-left: 15px;
+    }
+    .col-content:nth-child(1){
+        padding-right: 15px;
+    }
 }
 
 @media(max-width:576px) {
