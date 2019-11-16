@@ -23,11 +23,14 @@ body {
     color: #7d5b74;
     margin-right: 15px;
     font-size: 20px;
+    text-decoration: none;
 }
+
 .nav .navbar .navbar-item::after {
     content: "/";
     margin-left: 10px;
 }
+
 .nav .navbar .navbar-item:nth-last-of-type(1)::after {
     content: ""
 }
@@ -42,7 +45,6 @@ body {
 }
 
 header {
-    height: calc(100vh - 90px);
     overflow: hidden;
     position: relative;
 }
@@ -90,6 +92,7 @@ header .header-wrapper {
     color: #fff;
     min-height: 718px;
     margin-top: 20px;
+    padding: 166px 112px 166px 112px;
 }
 
 .offert .content {
@@ -121,6 +124,7 @@ header .header-wrapper {
 
 .cards-item {
     background: #000;
+    width: 100%;
     overflow: hidden;
 
 }
@@ -146,11 +150,44 @@ header .header-wrapper {
 .col-content .cards-title {
     position: absolute;
     z-index: 10;
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 70%;
     transform: translate(-50%, -50%);
     color: #fff;
     font-weight: bold;
     font-size: 46px;
     text-shadow: 2px 2px 2px #7d5b74;
+}
+
+/*carousel *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+.slick-dots {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+
+}
+
+.slick-dots li {
+    list-style-type: none;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.slick-dots li button {
+    color: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    background: #e3cbc8;
+
+}
+
+.your-class {
+    position: relative;
 }
