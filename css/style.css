@@ -124,7 +124,7 @@ header .header-wrapper {
 
 .cards-item {
     background: #000;
-    width: 100%;
+   
     overflow: hidden;
 
 }
@@ -139,7 +139,7 @@ header .header-wrapper {
 
 .cards-item img {
 
-    height: 633px;
+    width:100%;
 }
 
 .col-content {
