@@ -9,11 +9,14 @@ body {
     height: 100px;
     width: 100%;
     background: #fff;
-    padding: 0 20px 0 20px;
+    
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     z-index: 100;
+}
+.nav .logo {
+    padding-left: 20px;
 }
 
 .nav .navbar {
@@ -51,6 +54,8 @@ body {
     width: 30px;
     height: 30px;
     display: none;
+    margin-right: 20px;
+    cursor:pointer;
 }
 
 .hamburger span {
@@ -192,7 +197,7 @@ header .header-wrapper {
     top: 97%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100;
+    z-index: 1;
     display: flex;
 
 }
@@ -219,28 +224,3 @@ header .header-wrapper {
     position: relative;
 }
 
-@media(max-width: 768px) {
-    .nav {
-        align-items: center;
-    }
-
-    .nav .navbar {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-    .col-content:nth-child(2){
-        padding-left: 15px;
-    }
-    .col-content:nth-child(1){
-        padding-right: 15px;
-    }
-}
-
-@media(max-width:576px) {
-    .offert {
-        padding: 10px;
-    }
-}
