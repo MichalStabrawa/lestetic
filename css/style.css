@@ -1,6 +1,7 @@
 body {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+   
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav {
@@ -156,7 +157,7 @@ header .header-wrapper {
 
 .cards-item {
     background: #000;
-
+position: relative;
     overflow: hidden;
 
 }
@@ -172,6 +173,11 @@ header .header-wrapper {
 .cards-item img {
 
     width: 100%;
+    transition: all 1s linear;
+}
+.cards-item img:hover {
+    transform: scale(1.1);
+    transition: all 1s;
 }
 
 .col-content {
@@ -182,14 +188,24 @@ header .header-wrapper {
 .col-content .cards-title {
     position: absolute;
     z-index: 10;
-    top: 80%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    top: 40px;
+    left: 50px;
+    
     color: #fff;
     font-weight: bold;
-    font-size: 46px;
-    text-shadow: 2px 2px 2px #7d5b74;
+    font-size: 42px;
+  
 }
+.col-content .cards-title .main-title {
+    font-size: 42px;
+    padding-right: 10px;
+}
+.col-content .cards-title .cards-title-content {
+    font-size: 30px;
+    padding-right: 10px;
+    font-style: italic;
+}
+
 
 /*carousel *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 .slick-dots {
