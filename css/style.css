@@ -224,3 +224,9 @@ header .header-wrapper {
     position: relative;
 }
 
+/*CENNIK style */
+
+.jumbotron {
+    margin-top: 100px;
+} 
+
