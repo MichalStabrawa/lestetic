@@ -13,6 +13,14 @@ $(document).ready(function(){
         $('.navbar').slideToggle(500)
         
     })
+
+    $('.cards-item').mouseover(function(){
+        $(".cards-price").fadeIn().css('dispaly','flex');
+        $(".cards-title-content").fadeOut()
+      });
+      $('.cards-item').mouseout(function(){
+        $(".cards-price").fadeOut(); 
+      })
 })
 
 console.log(window.location.pathname)
