@@ -176,8 +176,7 @@ position: relative;
     transition: all 1s linear;
 }
 .cards-item img:hover {
-    transform: scale(1.3);
-    transition: all .5s;
+  
 }
 
 .col-content {
@@ -203,9 +202,14 @@ position: relative;
 .col-content .cards-title .cards-title-content {
     font-size: 30px;
     padding-right: 10px;
-    font-style: italic;
+    font-weight: normal
 }
-.col-content .cards-title .cards-price {
+.cards-content-next {
+    display: none;
+    font-size: 24px;
+    font-weight: normal;
+}
+.col-content .cards-title .cards-price-item {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
@@ -213,7 +217,17 @@ position: relative;
     max-width: 324px;
     border-bottom: 1px solid #fff;
     margin-bottom: 30px;
+   
+}
+.cards-price {
     display: none;
+}
+.btn-card {
+    height: 30px;
+    border: 0;
+    font-size: 18px;
+    background: #e0bfbd;
+    color: #ac484d;
 }
 .col-content .cards-title .price-big {
     font-size: 30px;
