@@ -175,9 +175,7 @@ position: relative;
     width: 100%;
     transition: all 1s linear;
 }
-.cards-item img:hover {
-  
-}
+
 
 .col-content {
     margin-bottom: 15px;

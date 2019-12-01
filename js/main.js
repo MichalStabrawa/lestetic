@@ -20,6 +20,10 @@ $(document).ready(function() {
       .fadeIn(500);
     $(this).find(".cards-content-next")
       .fadeIn(600);
+       $(this).find(".cards-content-next")
+      .fadeIn(600);
+      $(this).find("img").css('opacity','0.5');
+   
   });
 
   $(".col-content").mouseleave(function() {
@@ -29,6 +33,7 @@ $(document).ready(function() {
       .css("display","none");
     $(this).find(".cards-content-next")
       .css("display","none");
+      $(this).find("img").css('opacity','1');
   });
 });
 
