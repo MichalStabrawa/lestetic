@@ -22,6 +22,7 @@ $(document).ready(function() {
       .fadeIn(600);
        $(this).find(".cards-content-next")
       .fadeIn(600);
+      $(this).find("img").css("transform","scale(1.1)");
      
    
   });
@@ -33,6 +34,7 @@ $(document).ready(function() {
       .css("display","none");
     $(this).find(".cards-content-next")
       .css("display","none");
+      $(this).find("img").css("transform","scale(1)");
       
   });
 });
