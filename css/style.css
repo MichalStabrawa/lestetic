@@ -219,21 +219,21 @@ position: relative;
 }
 .cards-content-next {
     display: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     color: #E0BFBD;
   
 }
 .col-content .cards-title .cards-price-item {
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 324px;
     font-weight: 300;
-    border-bottom: 1px solid  #E0BFBD;
     margin-bottom: 30px;
     color: #E0BFBD;
+    align-items: flex-start;
    
 }
 .cards-price {
@@ -250,7 +250,23 @@ position: relative;
     font-size: 30px;
     padding-bottom: 3px;
 }
-
+.cards-wrapper-price {
+    display: flex;
+    align-items: center;
+}
+.cards-wrapper-price .wrapper-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.small-time {
+    font-size: 11px;
+    font-weight: 300;
+}
+.big-price {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /*carousel *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 .slick-dots {
