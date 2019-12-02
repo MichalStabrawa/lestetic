@@ -1,10 +1,11 @@
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
+
 body {
     box-sizing: border-box;
-   
+
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -14,12 +15,13 @@ body {
     height: 100px;
     width: 100%;
     background: #fff;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     z-index: 100;
 }
+
 .nav .logo {
     padding-left: 20px;
 }
@@ -60,7 +62,7 @@ body {
     height: 30px;
     display: none;
     margin-right: 20px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .hamburger span {
@@ -161,13 +163,14 @@ header .header-wrapper {
 
 .cards-item {
     background: #000;
-position: relative;
+    position: relative;
     overflow: hidden;
 
 }
+
 .col-content {
-    color:#e0bfbd;
-    
+    color: #e0bfbd;
+
 }
 
 .col-content:nth-child(1) {
@@ -200,74 +203,86 @@ position: relative;
     color: #fff;
     font-weight: bold;
     font-size: 42px;
-  
+
 }
+
 .col-content .cards-title .main-title {
     font-size: 48px;
     padding-right: 10px;
     font-weight: 300;
     color: #E0BFBD;
 }
+
 .col-content .cards-title .main-title span.main-title-item {
     font-weight: bold;
 }
+
 .col-content .cards-title .cards-title-content {
     font-size: 30px;
     padding-right: 10px;
     font-weight: normal;
     color: #E0BFBD;
 }
+
 .cards-content-next {
     display: none;
     font-size: 20px;
     font-weight: 300;
     color: #E0BFBD;
-  
+
 }
+
 .col-content .cards-title .cards-price-item {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     font-weight: 300;
     margin-bottom: 30px;
     color: #E0BFBD;
     align-items: flex-start;
-   
+
 }
+
 .cards-price {
     display: none;
 }
+
 .btn-card {
-    
+
     border: 0;
     font-size: 18px;
     background: #e0bfbd;
     color: #ac484d;
-    padding:5px;
+    padding: 5px;
 }
+
 .btn-card:hover {
     background: #55D3C7;
 }
+
 .col-content .cards-title .price-big {
     font-size: 30px;
     padding-bottom: 3px;
 }
+
 .cards-wrapper-price {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .cards-wrapper-price .wrapper-item {
     display: flex;
     flex-direction: column;
     margin-right: 5px;
 }
+
 .small-time {
     font-size: 11px;
     font-weight: 300;
 }
+
 .big-price {
     font-size: 20px;
     font-weight: bold;
@@ -310,5 +325,4 @@ position: relative;
 
 .jumbotron {
     margin-top: 100px;
-} 
-
+}
