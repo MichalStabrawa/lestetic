@@ -229,7 +229,7 @@ position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 324px;
+    
     font-weight: 300;
     margin-bottom: 30px;
     color: #E0BFBD;
@@ -240,11 +240,15 @@ position: relative;
     display: none;
 }
 .btn-card {
-    height: 30px;
+    
     border: 0;
     font-size: 18px;
     background: #e0bfbd;
     color: #ac484d;
+    padding:5px;
+}
+.btn-card:hover {
+    background: #55D3C7;
 }
 .col-content .cards-title .price-big {
     font-size: 30px;
@@ -253,6 +257,7 @@ position: relative;
 .cards-wrapper-price {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .cards-wrapper-price .wrapper-item {
     display: flex;
