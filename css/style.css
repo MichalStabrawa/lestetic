@@ -246,10 +246,11 @@ header .header-wrapper {
 
 /*.col-content cards-title nth2*/
 
-.col-content .cards-title:nth-child(2) .main-title,.col-content .cards-title:nth-child(2) .cards-title-content,.main-title,.col-content .cards-title:nth-child(2) .cards-content-next {
+.col-content .cards-title:nth-child(2) .main-title,.col-content .cards-title:nth-child(2) .cards-title-content,.col-content:nth-child(2) .cards-content-next {
     
   color: #5e5051;
 }
+
 .col-content .cards-title:nth-child(2) .main-title span {
     font-style: italic;
 }
