@@ -246,9 +246,11 @@ header .header-wrapper {
 
 /*.col-content cards-title nth2*/
 
-.col-content:nth-child(2)  .cards-title.main-title,.col-content:nth-child(2) .cards-title .cards-title-content,.col-content:nth-child(2) .cards-content-next {
-    
-  color: #5e5051;
+.col-content:nth-child(2) .cards-title.main-title,
+.col-content:nth-child(2) .cards-title .cards-title-content,
+.col-content:nth-child(2) .cards-content-next {
+
+    color: #5e5051;
 }
 
 .col-content .cards-title:nth-child(2) .main-title span {
@@ -269,7 +271,7 @@ header .header-wrapper {
 }
 
 .btn-card:hover {
-    
+
     background: #55D3C7;
 }
 
@@ -332,9 +334,56 @@ header .header-wrapper {
 .your-class {
     position: relative;
 }
+.your-class .carousel-title {
+    position: absolute;
+    z-index:1;
+    top: 0;
+    right: 0;
+    width: 40%;
+    padding: 25px;
+    padding-top:60px;
+
+}
 
 /*CENNIK style */
 
 .jumbotron {
     margin-top: 100px;
 }
+
+/*footer style*/
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #7d5b74;
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer address {
+text-align: left;
+}
+.footer  .icons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.footer .icons-wrapper i {
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+.footer .icons-wrapper i:hover {
+    opacity: 0.8
+}
+
+/*cennik styles */
+
+.jumbotron  {
+    background: #ff6b6b;
+    color: #fff;
+}
+
