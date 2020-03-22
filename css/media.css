@@ -11,6 +11,7 @@
         width: 100%;
         top: 100%;
     }
+
     .navbar .navbar-item {
         display: block;
         margin-bottom: 10px;
@@ -26,6 +27,14 @@
 
     .col-content:nth-child(1) {
         padding-right: 15px;
+    }
+
+    .col-content .cards-title .main-title {
+        font-size: 32px;
+    }
+
+    .col-content .cards-title .cards-title-content {
+        font-size: 28px;
     }
 }
 

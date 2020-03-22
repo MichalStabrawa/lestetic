@@ -170,6 +170,7 @@ header .header-wrapper {
 
 .col-content {
     color: #e0bfbd;
+    overflow: hidden;
 
 }
 
@@ -181,10 +182,17 @@ header .header-wrapper {
     padding-left: 7.5px;
 }
 
-.cards-item img {
+.col-content .cards-item {
+    height: 725px;
+}
 
-    width: 100%;
+.cards-item img {
     transition: all .5s linear;
+    transform: translateX(-150px);
+}
+
+.cards-item img.active {
+    transform: translateX(0px);
 }
 
 
