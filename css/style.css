@@ -187,8 +187,8 @@ header .header-wrapper {
 }
 
 .cards-item img {
-    transition: all .5s linear;
-    transform: translateX(-150px);
+    transition: all .6s ease-in-out;
+    transform: translateX(-100px);
 }
 
 .cards-item img.active {
