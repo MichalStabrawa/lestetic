@@ -184,7 +184,7 @@ header .header-wrapper {
 }
 
 .col-content .cards-item img.active {
-  transform: translateX(2px);
+  transform: translateX(0);
 }
 
 .col-content .cards-item.static {
@@ -199,11 +199,12 @@ header .header-wrapper {
   position: absolute;
   z-index: 1;
   top: 0;
+  left: 0;
   transition: all .1s ease-in;
 }
 
 .col-content .cards-item.static img.show.active {
-  opacity: 0;
+  z-index: -1;
 }
 
 .col-content {

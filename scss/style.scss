@@ -190,7 +190,7 @@ header .header-wrapper {
         transform: translateX(-150px);
 
         &.active {
-            transform: translateX(2px);
+            transform: translateX(0);
         }
     }
     &.static {
@@ -202,10 +202,11 @@ header .header-wrapper {
                 position: absolute;
                 z-index: 1;
                 top: 0;
+                left: 0;
                 transition: all .1s ease-in;
 
                 &.active {
-                    opacity: 0;
+                    z-index: -1;
                 }
           }
         }
