@@ -184,19 +184,29 @@ header .header-wrapper {
 
 .col-content .cards-item {
     height: 725px;
+
+    img {
+        transition: all 1s ease-in-out;
+        transform: translateX(-150px);
+
+        &.active {
+            transform: translateX(2px);
+        }
+    }
+    &.static {
+        position: relative;
+        img {
+            transform: translateX(0);
+
+            &.show {
+                position: absolute;
+                z-index: 10;
+                top: 0;
+                
+            }
+        }
+    }
 }
-
-.cards-item img {
-    transition: all 1s ease-in-out;
-    transform: translateX(-150px);
-}
-
-.cards-item img.active {
-    transform: translateX(0px);
-}
-
-
-
 
 .col-content {
     margin-bottom: 15px;
@@ -372,23 +382,36 @@ header .header-wrapper {
     font-size: 22px;
 }
 
-.footer address {
-text-align: left;
+.footer  {
+    address {
+        text-align: left;
+    }
+
 }
-.footer  .icons-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
+.footer   {
+    .icons-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+
+        i {
+            margin-left: 10px;
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: 0.8
+            }
+
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+   
 }
 
-.footer .icons-wrapper i {
-    margin-left: 10px;
-    transition: all 0.5s;
-}
-.footer .icons-wrapper i:hover {
-    opacity: 0.8
-}
+
 
 /*cennik styles */
 
@@ -397,3 +420,52 @@ text-align: left;
     color: #fff;
 }
 
+@media(max-width: 768px) {
+    .nav {
+        align-items: center;
+    }
+
+    .nav .navbar {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        background: #fff;
+        width: 100%;
+        top: 100%;
+    }
+
+    .navbar .navbar-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .col-content:nth-child(2) {
+        padding-left: 15px;
+    }
+
+    .col-content:nth-child(1) {
+        padding-right: 15px;
+    }
+
+    .col-content .cards-title .main-title {
+        font-size: 32px;
+    }
+
+    .col-content .cards-title .cards-title-content {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:576px) {
+    .offert {
+        padding: 10px;
+    }
+
+    .col-content .cards-title {
+        font-size: 30px;
+    }
+}
