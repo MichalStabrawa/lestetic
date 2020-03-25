@@ -197,8 +197,13 @@ header .header-wrapper {
 
 .col-content .cards-item.static img.show {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   top: 0;
+  transition: all .1s ease-in;
+}
+
+.col-content .cards-item.static img.show.active {
+  opacity: 0;
 }
 
 .col-content {
