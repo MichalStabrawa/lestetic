@@ -180,7 +180,7 @@ header .header-wrapper {
 
 .col-content .cards-item img {
   transition: all 1s ease-in-out;
-  transform: translateX(-150px);
+  transform: translateX(-149px);
 }
 
 .col-content .cards-item img.active {
