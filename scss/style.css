@@ -278,6 +278,16 @@ header .header-wrapper {
   margin-bottom: 0;
 }
 
+.col-content .cards-title .cards-price-item p.cards-wrapper-price-text {
+  max-width: 323px;
+}
+
+.col-content .cards-title .cards-price-item p.cards-wrapper-price-text span {
+  font-weight: normal;
+  font-size: 18px;
+  color: #f8e5e7;
+}
+
 .col-content .cards-title .cards-price-item span {
   font-size: 24px;
   color: #0d113c;

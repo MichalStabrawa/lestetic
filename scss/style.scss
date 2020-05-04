@@ -293,6 +293,16 @@ header .header-wrapper {
         font-family: "Roboto Condensed";
         font-weight: 300;
         margin-bottom: 0;
+
+       &.cards-wrapper-price-text {
+           max-width: 323px;
+
+           & span {
+               font-weight: normal;
+               font-size: 18px;
+               color: $white;
+           }
+       }
     }
 
     span {
