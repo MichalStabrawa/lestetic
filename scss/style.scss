@@ -1,3 +1,5 @@
+$white: #f8e5e7;
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -246,6 +248,10 @@ header .header-wrapper {
 
 .col-content .cards-title .main-title span.main-title-item {
     font-weight: bold;
+
+    &.first {
+        font-weight: 300;
+    }
 }
 
 .col-content .cards-title .cards-title-content {
@@ -265,18 +271,34 @@ header .header-wrapper {
 }
 
 .col-content .cards-title .cards-price-item {
-    font-size: 20px;
+
+    /*font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 300;
     margin-bottom: 30px;
     color: #E0BFBD;
-    align-items: flex-start;
+    align-items: flex-start;*/
+    margin-bottom: 25px;
+
+    &.last {
+        margin-bottom: 80px;
+    }
+
+    p {
+        font-size: 18px;
+        color: $white;
+
+        font-family: "Roboto Condensed";
+        font-weight: 300;
+        margin-bottom: 0;
+    }
 
     span {
         font-size: 24px;
         color: #0d113c;
+        font-weight: 300;
     }
 
 }
@@ -303,8 +325,9 @@ header .header-wrapper {
     border: 0;
     font-size: 18px;
     background: #e0bfbd;
-    color: #ac484d;
-    padding: 5px;
+    color: #99182c;
+    padding: 5px 17px;
+    border-radius: 5px;
 }
 
 .btn-card:hover {
@@ -321,6 +344,11 @@ header .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &-text {
+        font-weight: 300;
+        color: yellow;
+    }
 }
 
 .cards-wrapper-price .wrapper-item {
@@ -472,7 +500,7 @@ header .header-wrapper {
 
     .col-content .cards-title .main-title {
         font-size: 32px;
-        
+
     }
 
     .col-content .cards-title .cards-title-content {

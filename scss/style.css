@@ -236,6 +236,10 @@ header .header-wrapper {
   font-weight: bold;
 }
 
+.col-content .cards-title .main-title span.main-title-item.first {
+  font-weight: 300;
+}
+
 .col-content .cards-title .cards-title-content {
   font-size: 24px;
   color: #0d113c;
@@ -251,19 +255,33 @@ header .header-wrapper {
 }
 
 .col-content .cards-title .cards-price-item {
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /*font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #E0BFBD;
+    align-items: flex-start;*/
+  margin-bottom: 25px;
+}
+
+.col-content .cards-title .cards-price-item.last {
+  margin-bottom: 80px;
+}
+
+.col-content .cards-title .cards-price-item p {
+  font-size: 18px;
+  color: #f8e5e7;
+  font-family: "Roboto Condensed";
   font-weight: 300;
-  margin-bottom: 30px;
-  color: #E0BFBD;
-  align-items: flex-start;
+  margin-bottom: 0;
 }
 
 .col-content .cards-title .cards-price-item span {
   font-size: 24px;
   color: #0d113c;
+  font-weight: 300;
 }
 
 /*.col-content cards-title nth2*/
@@ -285,8 +303,9 @@ header .header-wrapper {
   border: 0;
   font-size: 18px;
   background: #e0bfbd;
-  color: #ac484d;
-  padding: 5px;
+  color: #99182c;
+  padding: 5px 17px;
+  border-radius: 5px;
 }
 
 .btn-card:hover {
@@ -302,6 +321,11 @@ header .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.cards-wrapper-price-text {
+  font-weight: 300;
+  color: yellow;
 }
 
 .cards-wrapper-price .wrapper-item {
