@@ -218,17 +218,18 @@ header .header-wrapper {
   z-index: 10;
   top: 40px;
   left: 40px;
-  max-width: 378px;
+  max-width: 450px;
   color: #fff;
   font-weight: bold;
   font-size: 42px;
 }
 
 .col-content .cards-title .main-title {
-  font-size: 48px;
+  font-size: 36px;
   padding-right: 10px;
   font-weight: 300;
-  color: #E0BFBD;
+  color: #f8e5e7;
+  margin-bottom: 40px;
 }
 
 .col-content .cards-title .main-title span.main-title-item {
@@ -236,10 +237,10 @@ header .header-wrapper {
 }
 
 .col-content .cards-title .cards-title-content {
-  font-size: 30px;
+  font-size: 24px;
+  color: #0d113c;
   padding-right: 10px;
-  font-weight: normal;
-  color: #E0BFBD;
+  font-weight: 300;
 }
 
 .cards-content-next {
@@ -258,6 +259,11 @@ header .header-wrapper {
   margin-bottom: 30px;
   color: #E0BFBD;
   align-items: flex-start;
+}
+
+.col-content .cards-title .cards-price-item span {
+  font-size: 24px;
+  color: #0d113c;
 }
 
 /*.col-content cards-title nth2*/
@@ -429,7 +435,8 @@ header .header-wrapper {
     font-size: 32px;
   }
   .col-content .cards-title .cards-title-content {
-    font-size: 28px;
+    font-size: 24px;
+    color: #0d113c;
   }
 }
 
