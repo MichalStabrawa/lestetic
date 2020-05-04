@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $(".your-class").slick({
     dots: true,
     infinite: true,
@@ -9,33 +9,33 @@ $(document).ready(function() {
     fade: true,
   });
 
-  $(".hamburger").click(function() {
+  $(".hamburger").click(function () {
     $(".navbar").slideToggle(500);
   });
 
-  $(".col-content").mouseenter(function() {
+  $(".col-content").mouseenter(function () {
     $(this).find(".cards-title-content")
       .css("display", "none");
     $(this).find(".cards-price")
       .fadeIn(500);
     $(this).find(".cards-content-next")
       .fadeIn(600);
-       $(this).find(".cards-content-next")
+    $(this).find(".cards-content-next")
       .fadeIn(600);
     //  $(this).find("img").css("transform","scale(1.1)");
-     $(this).find("img").addClass("active")
-   
+    $(this).find("img").addClass("active")
+
   });
 
-  $(".col-content").mouseleave(function() {
+  $(".col-content").mouseleave(function () {
     $(this).find(".cards-title-content")
       .fadeIn(500);
     $(this).find(".cards-price")
-      .css("display","none");
+      .css("display", "none");
     $(this).find(".cards-content-next")
-      .css("display","none");
+      .css("display", "none");
     //  $(this).find("img").css("transform","scale(1)");
-      $(this).find("img").removeClass("active")
+    $(this).find("img").removeClass("active")
   });
 });
 
