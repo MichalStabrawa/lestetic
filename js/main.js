@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  
+  var isIE11 = !!navigator.userAgent.match(/Trident.*rv\:11\./);
+  alert(isIE11);
+
+  if(isIE11) {
+    alert("IE 11")
+  }
+  else {
+    alert("Inna ")
+  }
+
+
   $(".your-class").slick({
     dots: true,
     infinite: true,
@@ -13,7 +25,7 @@ $(document).ready(function () {
     $(".navbar").slideToggle(500);
   });
 
-  $(".col-content").mouseenter(function () {
+  $(".col-content.show").mouseenter(function () {
     $(this).find(".cards-title-content")
       .css("display", "none");
     $(this).find(".cards-price")
@@ -27,7 +39,7 @@ $(document).ready(function () {
 
   });
 
-  $(".col-content").mouseleave(function () {
+  $(".col-content.show").mouseleave(function () {
     $(this).find(".cards-title-content")
       .fadeIn(500);
     $(this).find(".cards-price")
@@ -37,6 +49,10 @@ $(document).ready(function () {
     //  $(this).find("img").css("transform","scale(1)");
     $(this).find("img").removeClass("active")
   });
+
+
 });
 
+
 console.log(window.location.pathname);
+console.log("TEST IE")
