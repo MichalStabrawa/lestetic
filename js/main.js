@@ -1,15 +1,4 @@
 $(document).ready(function () {
-  
-  var isIE11 = !!navigator.userAgent.match(/Trident.*rv\:11\./);
-  alert(isIE11);
-
-  if(isIE11) {
-    alert("IE 11")
-  }
-  else {
-    alert("Inna ")
-  }
-
 
   $(".your-class").slick({
     dots: true,
